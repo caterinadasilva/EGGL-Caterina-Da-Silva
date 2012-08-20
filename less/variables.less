@@ -1,0 +1,102 @@
+/* Variables.less
+ * Variables to customize the look and feel
+ * ----------------------------------------------------- */
+
+@sans:				"Source Sans", Helvetica, Arial, sans-serif;
+@serif:				Baskerville, Georgia, serif;
+@mono:				Monaco, Menlo, "Courier New", Courier, monospace;
+@tipografia:		@sans;
+
+
+// Grises
+@negro:				rgba(0, 0, 0, 1);
+@gris-oscuro:		lighten(@negro, 25%);
+@gris:				lighten(@negro, 50%);
+@gris-claro:		lighten(@negro, 75%);
+@blanco:			rgba(255, 255, 255, 1);
+
+// Colores
+@celeste:			rgba(87, 190, 255, .95);
+@azul:				rgba(30, 105, 180, .95);
+@azul-oscuro:		darken(@azul, 15%);
+@verde:				rgba(120, 170, 20, .95);
+@verde-claro:		lighten(@verde, 50%);
+@verde-oscuro:		darken(@verde, 15%);
+@rojo:				rgba(170, 0, 0, 1);
+@rojo-oscuro:		darken(@rojo, 20%);
+@amarillo:			rgba(220, 200, 40, .95);
+@ocre:				rgba(170, 160, 70, 1);
+
+// Especiales
+@pizarra:			rgba(50, 60, 70, 1);
+@ahuesado:			rgba(239, 242, 219, 1);
+@borde:				lighten(@gris-claro, 10%);
+
+// Links
+@link-color:		@rojo;
+@color-link:		@link-color;
+@link-colorHover:	@rojo-oscuro;
+@color-opuesto:		spin(@link-color, 180);
+
+// Proporciones tipográficas
+@font-size:			16px;					// tamaño base en pixeles
+@cuerpo:			@font-size;
+@em: 				@font-size * 1em;		// atajo para salida en ems, ej. "12/@em"
+@interlinea:		@em * 1.81;
+
+
+// Grilla
+@columnas:			24;
+@columna: 			25px;
+@interColumna: 		24px;
+@anchoTotal:		(@columnas * (@columna + @interColumna) - @interColumna);
+
+// Anchos de columna
+
+ @1cols: ( 1 * (@columna + @interColumna) - @interColumna); @1col: @1cols;
+ @2cols: ( 2 * (@columna + @interColumna) - @interColumna);
+ @3cols: ( 3 * (@columna + @interColumna) - @interColumna);
+ @4cols: ( 4 * (@columna + @interColumna) - @interColumna);
+ @5cols: ( 5 * (@columna + @interColumna) - @interColumna);
+ @6cols: ( 6 * (@columna + @interColumna) - @interColumna);
+ @7cols: ( 7 * (@columna + @interColumna) - @interColumna);
+ @8cols: ( 8 * (@columna + @interColumna) - @interColumna);
+ @9cols: ( 9 * (@columna + @interColumna) - @interColumna);
+@10cols: (10 * (@columna + @interColumna) - @interColumna);
+@11cols: (11 * (@columna + @interColumna) - @interColumna);
+@12cols: (12 * (@columna + @interColumna) - @interColumna);
+@13cols: (13 * (@columna + @interColumna) - @interColumna);
+@14cols: (14 * (@columna + @interColumna) - @interColumna);
+@15cols: (15 * (@columna + @interColumna) - @interColumna);
+@16cols: (16 * (@columna + @interColumna) - @interColumna);
+@17cols: (17 * (@columna + @interColumna) - @interColumna);
+@18cols: (18 * (@columna + @interColumna) - @interColumna);
+@19cols: (19 * (@columna + @interColumna) - @interColumna);
+@20cols: (20 * (@columna + @interColumna) - @interColumna);
+@21cols: (21 * (@columna + @interColumna) - @interColumna);
+@22cols: (22 * (@columna + @interColumna) - @interColumna);
+@23cols: (23 * (@columna + @interColumna) - @interColumna);
+@24cols: (24 * (@columna + @interColumna) - @interColumna);
+
+// Ancho del bloque
+
+@bloque:	(@anchoTotal + 2 * @interColumna) / @columnas;
+@bloques:			@columnas;
+@bloquesAnchoTotal:	(@bloques * (@bloques + @interColumna) - @interColumna);
+
+// Resolusiones
+
+@tam8:		 8 * (@columna + @interColumna) - @interColumna ; @tam8m:	@tam8 - 1;
+@tam9:		 9 * (@columna + @interColumna) - @interColumna ; @tam9m:	@tam9 - 1;
+@tam10:		10 * (@columna + @interColumna) - @interColumna ; @tam10m:	@tam10 - 1;
+@tam12:		12 * (@columna + @interColumna) - @interColumna ; @tam12m:	@tam12 - 1;
+@tam13:		13 * (@columna + @interColumna) - @interColumna ; @tam13m:	@tam13 - 1;
+@tam14:		14 * (@columna + @interColumna) - @interColumna ; @tam14m:	@tam14 - 1;
+@tam16:		16 * (@columna + @interColumna) - @interColumna ; @tam16m:	@tam16 - 1;
+@tam17:		17 * (@columna + @interColumna) - @interColumna ; @tam17m:	@tam17 - 1;
+@tam18:		18 * (@columna + @interColumna) - @interColumna ; @tam18m:	@tam18 - 1;
+@tam24:		24 * (@columna + @interColumna) - @interColumna ; @tam24m:	@tam24 - 1;
+@tam25:		25 * (@columna + @interColumna) - @interColumna ; @tam25m:	@tam25 - 1;
+@tam26:		26 * (@columna + @interColumna) - @interColumna ; @tam26m:	@tam26 - 1;
+
+

@@ -1,0 +1,42 @@
+/* 
+
+		e[ad] - EGGL
+		Taller de Investigaciones Gráficas 2012
+
+		Tablas
+
+*/
+
+
+table{
+	border-collapse: collapse;
+	border-left: 1px solid @borde;
+	border-right: 1px solid @borde;
+	
+	tr{
+		border-bottom: 1px solid @borde;
+		
+		&:first-of-type{
+			border-top: 1px solid @borde;
+		}
+	}
+	th, td{
+		padding: @interColumna /3;
+		text-align: left;
+	}
+	
+	th{
+		font-weight: bold;
+		background-color: fade(@blanco, 70%);
+	}
+	
+	td{
+
+		color: fade(@negro, 60%);
+		vertical-align: top;
+		.btn{
+			margin-top: 0;
+		}
+	}
+}
+

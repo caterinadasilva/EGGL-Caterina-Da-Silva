@@ -1,0 +1,74 @@
+/* 
+
+		e[ad] - EGGL
+		Taller de Investigaciones Gráficas 2012
+
+		Portada
+				Definiendo la visualización de la portada.
+
+*/
+
+
+// Artículo destacado
+
+.arreglos-portada{
+	img {
+		position: relative;
+		display: inline;
+		float: left;
+		margin-right: @interlinea;
+		}
+	
+	a{
+	text-decoration: none;
+		
+		.titulo{
+			font-size: 16px;
+			color: @gris-oscuro;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	}
+	
+	&:hover{
+		.sombra-foco;
+	}
+}
+
+.articulo-destacado {
+	.sombra;
+	.bloque-dos-tercios;
+	.padding-interno;
+	.arreglos-portada;
+	img{width: 65%;}
+}
+
+.articulo-sec{
+	.bloque-tercio;
+	.padding-interno;
+	.arreglos-portada;
+	img{width: 65%;}
+
+}
+
+.articulo-ter{
+	.bloque-tercio;
+	.padding-interno;
+	.arreglos-portada;
+	img{width: 50%;}
+
+}
+
+.agenda{
+	.bloquedetres;
+	.padding-interno;
+	.arreglos-portada;
+	img{width: 100%;}
+}
+
+.downbar{
+	.bloquedecuatro;
+	.padding-interno;
+	.arreglos-portada;
+	img{width: 100%;}
+}

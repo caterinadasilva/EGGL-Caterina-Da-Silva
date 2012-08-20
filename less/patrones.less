@@ -1,0 +1,181 @@
+/* 
+
+		e[ad] - EGGL
+		Taller de Investigaciones Gráficas 2012
+
+		Patrones
+
+*/
+
+header .iso{
+	margin: 0 0 0 @interColumna;
+	
+	a{
+	color: @color-link;
+	text-decoration: none;
+		&:hover{
+			background-color: transparent;
+			text-decoration: none;
+			cursor: pointer;
+			font-weight: lighter; 
+		}
+	}
+
+	h1{
+		.rojo;
+		font-size: 20px;
+		padding-top: 5px;
+	}
+
+	h2{
+		.margen-superior-negativo;
+		.gris;
+		.fino;
+		font-size: 18.5px;
+	}
+}
+
+ul.meta{
+	top: 0;
+	vertical-align: top;
+	text-align: right;
+	font-size: 10px;
+	margin: -@interColumna 0 @interColumna/2 0;
+	padding: 0;
+	
+	li{
+		display: inline;
+		border-right: 1px solid @borde;
+		padding: 0 10px;
+		&:last-of-type{ border: none; padding-right: @interColumna;}
+		a { font-weight: bold; }
+	}
+}
+
+.pizarra{
+	background-color: @pizarra;
+	color: fade(@blanco, 80%);
+	* {
+		color: fade(@blanco, 80%);
+		font-weight: 100;
+	}
+	
+	a{
+		color: @color-opuesto;
+	}
+	a:hover{
+		background-color: fade(@color-opuesto, 10%);
+	}
+
+}
+
+nav {
+	position: relative;
+	margin: 0 auto; 
+	top: 0;
+	right: 0;
+	padding: 0;
+	padding-bottom: @font-size*3;
+	border-top: 1px solid @borde;
+	
+	
+	ul, ol{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		.clearfix;
+			
+		li{
+		list-style: none;
+		float: left;
+		
+			a {	
+				display: block;
+				margin: 0;
+				padding: @cuerpo*9/@cuerpo;
+				color: @negro !important;
+				font-size: 11px;
+				text-transform: uppercase;
+			}
+			
+			a:hover {
+				text-decoration: none;
+				background-color: @ahuesado;
+				color: @link-color !important;
+				font-weight: bold;
+				.transition(.1s ease all);
+			}
+		}
+		
+		ul {
+		display: none;  
+		}
+		
+		li:hover {
+		
+			ul {
+			position: absolute;
+			display: inline;
+			left: 0;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			background-color: @ahuesado;
+			}
+			
+			li {
+			float: left;
+			}
+		}
+	}
+}
+
+
+	
+footer{
+	background-color: transparent;
+	margin: 0 auto;
+	padding-left: -@interColumna;
+	padding-top: @interColumna;
+	line-height: @interlinea * .7;
+	width: @anchoTotal;
+
+	
+	p{
+		border-top: 1px solid @borde;
+		padding-top: @cuerpo; 
+		font-size: @cuerpo*.7;
+		letter-spacing: inherit;
+		margin: inherit;
+		
+		img{
+			display: inline-block;
+			margin-bottom: -4px;
+		}
+	}
+	
+	address{
+		font-size: @cuerpo * .7;
+		line-height: inherit;
+		padding: @interColumna;
+	}
+	
+	nav{
+		border: none;
+		line-height: inherit;
+		padding-bottom: 0;
+		padding: inherit;
+
+		ul{
+			li{
+				a{
+					background-color: transparent !important;
+					font-size: @cuerpo * .7;
+					padding: 4px 10px 4px 10px;
+					text-transform: none;
+					.border-radius(4px);
+				}
+			}
+		}
+	}
+}
