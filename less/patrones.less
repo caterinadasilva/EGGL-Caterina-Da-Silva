@@ -1,14 +1,14 @@
 /* 
 
 		e[ad] - EGGL
-		Taller de Investigaciones Gr·ficas 2012
+		Taller de Investigaciones Gr√°ficas 2012
 
 		Patrones
 
 */
 
 header .iso{
-	margin: 0 0 0 @interColumna;
+	margin: @interColumna 0 -@interColumna 0;
 	
 	a{
 	color: @color-link;
@@ -40,14 +40,19 @@ ul.meta{
 	vertical-align: top;
 	text-align: right;
 	font-size: 10px;
-	margin: -@interColumna 0 @interColumna/2 0;
+	margin: @interColumna @interColumna @interColumna 0;
 	padding: 0;
 	
 	li{
 		display: inline;
 		border-right: 1px solid @borde;
-		padding: 0 10px;
-		&:last-of-type{ border: none; padding-right: @interColumna;}
+		padding: 0px 10px;
+		
+		&:last-of-type{ 
+			border: none; 
+			padding-right: 0;
+			}
+			
 		a { font-weight: bold; }
 	}
 }
@@ -56,15 +61,15 @@ ul.meta{
 	background-color: @pizarra;
 	color: fade(@blanco, 80%);
 	* {
-		color: fade(@blanco, 80%);
+		color: @blanco;
 		font-weight: 100;
 	}
 	
 	a{
-		color: @color-opuesto;
+		color: @ahuesado;
 	}
 	a:hover{
-		background-color: fade(@color-opuesto, 10%);
+		color: @rojo;
 	}
 
 }
@@ -77,14 +82,13 @@ nav {
 	padding: 0;
 	padding-bottom: @font-size*3;
 	border-top: 1px solid @borde;
-	
-	
+    
 	ul, ol{
 		margin: 0;
 		padding: 0;
 		list-style: none;
 		.clearfix;
-			
+        
 		li{
 		list-style: none;
 		float: left;
@@ -100,9 +104,8 @@ nav {
 			
 			a:hover {
 				text-decoration: none;
-				background-color: @ahuesado;
-				color: @link-color !important;
-				font-weight: bold;
+				background-color: @pizarra;
+				color: @ahuesado !important;
 				.transition(.1s ease all);
 			}
 		}
@@ -120,7 +123,10 @@ nav {
 			width: 100%;
 			margin: 0;
 			padding: 0;
-			background-color: @ahuesado;
+			background-color: @pizarra;
+            
+            a{color: @blanco !important;}
+            a:hover{color: @ahuesado !important;}
 			}
 			
 			li {
@@ -144,7 +150,7 @@ footer{
 	p{
 		border-top: 1px solid @borde;
 		padding-top: @cuerpo; 
-		font-size: @cuerpo*.7;
+		font-size: @cuerpo;
 		letter-spacing: inherit;
 		margin: inherit;
 		
@@ -155,7 +161,7 @@ footer{
 	}
 	
 	address{
-		font-size: @cuerpo * .7;
+		font-size: @cuerpo;
 		line-height: inherit;
 		padding: @interColumna;
 	}
@@ -170,7 +176,7 @@ footer{
 			li{
 				a{
 					background-color: transparent !important;
-					font-size: @cuerpo * .7;
+					font-size: @cuerpo;
 					padding: 4px 10px 4px 10px;
 					text-transform: none;
 					.border-radius(4px);

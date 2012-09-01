@@ -1,0 +1,102 @@
+/* 
+
+    	e[ad] - EGGL
+		Taller de Investigaciones Gráficas 2012
+
+		Versátil para 4 bloques (320px)
+
+*/
+
+
+@media (min-width: 320px) and (max-width: 640px) {
+
+	body{
+		overflow: scroll;
+	}
+
+	 .pag, footer {width: @tam4;}
+	 footer, footer p, footer div address{
+		 line-height: @interlinea * .5;
+	 }
+	 
+	 .bloque1{width: @bloque;}
+	 .bloque2 {width: @bloque * 2;}
+	 .bloque3,
+	 .bloque4 {width: @bloque * 4;}
+	 .bloque5,
+	 .bloque6,
+	 .bloque7,
+	 .bloque8,{width: @bloque * 4;}
+	 .bloque9,
+	.bloque10,
+	.bloque11,
+	.bloque12,
+	.bloque13,
+	.bloque14,
+	.bloque15,
+	.bloque16,{width: @bloque * 4;}
+	
+	p{
+		font-size: 10px;
+		line-height: 180%;
+	}
+
+.total{
+    .bloque;
+	.bloque4;
+}
+	
+.mitad{
+	.bloque;
+	.bloque4;
+}
+
+.cuarto{
+	.bloque;
+	.bloque4;
+}
+
+.tres-cuartos{
+	.bloque;
+	.bloque4;
+}
+
+.octavo{
+    .bloque;
+    .bloque4;
+}
+
+.estracto{
+    font-size: 12px
+}
+
+.grande{
+    font-size: 200%;
+}
+.gigante{
+	font-size: 300%;
+}
+form{
+    &.buscador{
+        	text-align: left;
+            padding-left: @interColumna;
+    }
+    .btn{
+    	margin-top: 1px !important;
+    }
+}
+
+.destacado {
+    .arreglos-portada;
+    width: @bloque*4;
+    .contenido {padding-top: @interColumna;}
+    img {width: 320px;}
+}
+
+.seccion{
+    width: @bloque*2 - @interColumna*2 !important;
+    background-color: @pizarra;
+    float: left;
+    }
+
+}

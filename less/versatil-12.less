@@ -1,0 +1,78 @@
+/* 
+
+    	e[ad] - EGGL
+		Taller de Investigaciones Gráficas 2012
+
+		Versátil para 12 bloques (960px)
+
+*/
+
+
+@media (min-width: 960px) and (max-width: 1280px) {
+
+	 .pag, footer {width: @tam12;}
+	 footer, footer p, footer div address{
+		 line-height: @interlinea * .5;
+	 }
+     
+	 .bloque1{width: @bloque;}
+     .bloque2 {width: @bloque * 2;}
+	 .bloque3 {width: @bloque * 3;}
+	 .bloque4 {width: @bloque * 4;}
+	 .bloque5 {width: @bloque * 5;}
+	 .bloque6 {width: @bloque * 6;}
+	 .bloque7 {width: @bloque * 7;}
+	 .bloque8 {width: @bloque * 8;}
+	 .bloque9 {width: @bloque * 9;}
+	.bloque10 {width: @bloque * 10;}
+	.bloque11 {width: @bloque * 11;}
+	.bloque12 {width: @bloque * 12;}
+	.bloque13,
+	.bloque14,
+	.bloque15,
+	.bloque16,{width: @bloque * 12;}
+	
+	p{
+		font-size: 14px;
+		line-height: 180%;
+	}
+	.total{
+    .bloque;
+	.bloque12;
+}
+	
+.mitad{
+	.bloque;
+	.bloque6;
+}
+
+.cuarto{
+	.bloque;
+	.bloque3;
+}
+
+.tres-cuartos{
+	.bloque;
+	.bloque9;
+}
+
+.octavo{
+    .bloque;
+    .bloque2;
+}
+
+.destacado {
+    width: @bloque*12;
+    display: inline;
+    .contenido {width: @bloque *4;}
+    img {width: @bloque *8;} 
+}
+
+.seccion{
+    width: @bloque*2 - @interColumna !important;
+    background-color: @pizarra;
+    float: left;
+    }
+}
+
+}

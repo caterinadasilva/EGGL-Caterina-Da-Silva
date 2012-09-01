@@ -1,0 +1,105 @@
+/* 
+
+    	e[ad] - EGGL
+		Taller de Investigaciones Gráficas 2012
+
+		Versátil para 16 bloques (1280px)
+
+*/
+
+
+@media (min-width: 1280px) {
+
+	 .pag, footer {width: @tam16;}
+	 footer, footer p, footer div address{
+		 line-height: @interlinea * .5;
+	 }
+	 
+	.bloque1{width: @bloque;}
+     .bloque2,
+	 .bloque3,
+	 .bloque4,
+	 .bloque5,
+	 .bloque6,
+	 .bloque7,
+	 .bloque8,
+	 .bloque9,
+	.bloque10,
+	.bloque11,
+	.bloque12,
+	.bloque13,
+	.bloque14,
+	.bloque15,
+	.bloque16,
+	
+	p{
+		font-size: 14px;
+		line-height: 180%;
+	}
+    
+    .contenedor{width: @bloque*12;
+        }
+        
+        .barra {
+    background-color: @blanco;
+}
+	
+    .total{
+    .bloque;
+	.bloque16;
+}
+	
+.mitad{
+	.bloque;
+	.bloque8;
+}
+
+.cuarto{
+	.bloque;
+	.bloque4;
+}
+
+.tres-cuartos{
+	.bloque;
+	.bloque12;
+}
+
+.octavo{
+    .bloque;
+    .bloque2;
+}
+
+.destacado {
+    width: @bloque*12;
+    display: inline;
+    .contenido {width: @bloque *4;}
+    img {width: @bloque *8;} 
+}
+
+.seccion{
+    background-color: @pizarra;
+    width: @bloque*4 - @interColumna*3 !important;
+    margin-left: @interColumna;
+    float: left;
+    padding: @interColumna;
+    
+    &.lista{
+        ul{
+            li{font-size: 14px !important;}}}
+            
+    .twitter{
+        font-size: 14px !important;
+        p {font-size: 14px !important;}
+    }
+    
+    border-bottom: 1px solid @borde;
+    &:last-of-type{ 
+        	border: none; 
+			}
+}
+
+.footer{
+    font-size: 200%;
+    }
+
+}

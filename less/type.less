@@ -1,9 +1,9 @@
 /* 
 
 		e[ad] - EGGL
-		Taller de Investigaciones Gráficas 2012
+		Taller de Investigaciones GrÃ¡ficas 2012
 
-		Tipografía
+		TipografÃ­a
 
 */
 * {
@@ -21,7 +21,6 @@ a{
 	color: @color-link;
 	text-decoration: none;
 	&:hover{
-		font-weight: bold;
 		text-decoration: underline;
 	}
 	&:visited{
@@ -31,18 +30,18 @@ a{
 }
 
 p {
-  margin-bottom: @interlinea;
+  margin-bottom: @interlinea/2;
   line-height: @interlinea;
   color: fade(@negro, 60%);
 
   &.grande{
-  		font-size: @cuerpo * 1.5;
-	  color: @gris;
-	  line-height: 100%;
-	  padding: 0;
+  	font-size: @cuerpo * 1.5;
+	color: @gris;
+	line-height: 100%;
+	padding: 0;
   }
   &.chico {
-    font-size: @cuerpo*.80;
+    font-size: @cuerpo*.90;
     line-height: @interlinea * .6;
     color: fade(@negro, 45%);
   }
@@ -52,6 +51,13 @@ p {
   	line-height: @interlinea;
 	white-space: pre;
 	color: fade(@negro, 80%);
+  }
+  
+  &.vermas{
+	font-size: @cuerpo*.90;
+    line-height: @interlinea/2;
+    text-align: right;
+     
   }
 }
 
@@ -74,10 +80,15 @@ h1, h2, h3, h4, h5, h6 {
 	vertical-align: bottom;
 	
 	&.filete{
-		margin: 0 -@interColumna;
-		padding: 0 @interColumna;
+		margin: 0 auto;
+		padding: 0 auto;
 		border-bottom: 1px solid @borde;
 		.clearfix;
+	}
+	
+	&.portada{
+		padding: @bloque/4 0px  @interColumna @interColumna;
+		margin-bottom: @interlinea/3;
 	}
 }
 
@@ -95,18 +106,12 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-h1 {font-size: 34px;}
-h2 {font-size: 30px;}
-
-h3 {
-	font-weight: bold;
-	font-size: 24px;
-}
-
-h4 {font-size: 20px;}
-
-h5 {font-size: 18px;}
-h6 {font-size: 16px;}
+h1 {font-size: 30px;}
+h2 {font-size: 26px;}
+h3 {font-size: 24px;}
+h4 {font-size: 16px;}
+h5 {font-size: 14px;}
+h6 {font-size: 12px;}
 
 // Listas
 ul, ol {
@@ -152,7 +157,7 @@ hr {
   border-bottom: 1px solid #eee;
 }
 
-// Émfasis
+// Ã‰mfasis
 strong {
   font-style: inherit;
   font-weight: bold;
@@ -182,14 +187,14 @@ blockquote {
   }
 }
 
-// Dirección
+// DirecciÃ³n
 address {
   display: block;
   line-height: @interlinea;
   margin-bottom: @interlinea;
 }
 
-// código
+// cÃ³digo
 code, pre {
   font-family: Monaco, Andale Mono, Courier New, monospace;
   font-size: @font-size *.666;
@@ -250,7 +255,7 @@ pre {
 }
 
 
-//------------------------------------------------------Estilos Semánticos
+//------------------------------------------------------Estilos SemÃ¡nticos
 
 
 .estracto{
