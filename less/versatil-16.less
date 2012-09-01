@@ -10,10 +10,7 @@
 
 @media (min-width: 1280px) {
 
-	 .pag, footer {width: @tam16;}
-	 footer, footer p, footer div address{
-		 line-height: @interlinea * .5;
-	 }
+	 .pag, footer {width: @tam16;line-height: (@cuerpo + 4);}
 	 
 	.bloque1{width: @bloque;}
      .bloque2,
@@ -85,11 +82,15 @@
     
     &.lista{
         ul{
-            li{font-size: 14px !important;}}}
+            li{font-size: 12px !important;
+                small{font-size: 10px}
+                }
+         }
+    }
             
     .twitter{
-        font-size: 14px !important;
-        p {font-size: 14px !important;}
+        font-size: 12px !important;
+        p {font-size: 12px !important;}
     }
     
     border-bottom: 1px solid @borde;
